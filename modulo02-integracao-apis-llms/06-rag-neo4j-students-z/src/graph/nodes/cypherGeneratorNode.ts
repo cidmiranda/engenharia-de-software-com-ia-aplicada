@@ -55,7 +55,7 @@ export function createCypherGeneratorNode(
       }
 
       console.log(`✅ Generated Cypher query: ${data?.query}`);
-      if(state.isMultiStep && state.subQueries?.length) {
+      if(state.isMultiStep && state.subQueries) {
         return {
           query: data?.query,
           subQueries: [...state.subQueries, data?.query ?? ""]

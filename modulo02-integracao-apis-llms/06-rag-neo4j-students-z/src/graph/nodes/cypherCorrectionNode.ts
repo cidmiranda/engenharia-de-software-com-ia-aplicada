@@ -28,6 +28,7 @@ export function createCypherCorrectionNode(
       if(error) {
         return {
           ...state,
+          correctionAttempts: (state.correctionAttempts ?? 0) + 1,
           error: `Query correction failed: ${error ?? 'Unknown error'}`,
         };
       }
@@ -46,6 +47,7 @@ export function createCypherCorrectionNode(
       console.error('Error correcting query:', error.message);
       return {
         ...state,
+        correctionAttempts: (state.correctionAttempts ?? 0) + 1,
         error: `Query correction failed: ${error.message}`,
       };
     }

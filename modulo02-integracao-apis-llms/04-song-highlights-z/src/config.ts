@@ -27,11 +27,13 @@ export const config: ModelConfig = {
   httpReferer: '',
   xTitle: 'IA Devs - Prompt Chaining Article Generator',
   models: [
-    'arcee-ai/trinity-large-preview:free',
+    'nvidia/nemotron-3.5-super-vl:free',
+    'liquid/lfm-2.5-2.6b:free',
+    'thinkingmachines/inkling-small:free',
   ],
   provider: {
     sort: {
-      by: 'throughput', // Route to model with highest throughput (fastest response)
+      by: 'throughput', //Route to model with highest throughput (fastest response)
       partition: 'none',
     },
   },

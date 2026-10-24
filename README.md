@@ -496,3 +496,7 @@ npx -y skills add https://github.com/unipds-engenharia-de-ia-aplicada/engenharia
 
 /windowsfy <caminho do exemplo>
 ```
+
+
+skilss.sh 
+langfuse
