@@ -9,4 +9,4 @@ export function buildDocumentQAGraphInstance() {
   }
 }
 
-export const graph = buildDocumentQAGraphInstance();
+export const graph = buildDocumentQAGraphInstance().graph;
